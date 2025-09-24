@@ -1,47 +1,48 @@
-// Exp - 11
+// Exp - 12
 // Siddhesh 
 // 25070123505 (A3)
 
 #include <iostream>
 using namespace std;
 
-class student {
-    int age;
+class Student
+{
+private:
     string name;
+    long long int r_no;
 
 public:
-    student(string s, int a) {
-        name = s;
-        age = a;
+    Student()
+    {
+        name = "[USER]";
+        r_no = 0;
     }
-    student(const student &s) {
-        name = s.name;
-        age = s.age;
-        cout << "Copy Constructor Called." << endl;
-        cout<<"This output is by the copy constructor : "<<endl;
+
+    void set_name(string x)
+    {
+        name = x;
     }
+
+    void set_r_no(long long int x){
+        r_no = x;
+    };
 
     void display() {
-        cout << "Name : " << name << " Age : " << age << endl;
-    }
+        cout << name << " :- " << r_no << endl;
+    };
 };
 
-int main() {
-    student s1("Siddhesh", 19);
-    student s2 = s1;       
-
-    s1.display();
-    s2.display();
-
+int main(void)
+{
+    Student s;
+    s.set_name("Siddhesh Gajare");
+    s.set_r_no(25070123505LL);
+    s.display();
     return 0;
 }
 
-
 Output :-
-Copy Constructor Called.
-This output is by the copy constructor : 
-Name : Siddhesh Age : 19
-Name : Siddhesh Age : 19
+Siddhesh Gajare :- 25070123505
 
 
 === Code Execution Successful ===
