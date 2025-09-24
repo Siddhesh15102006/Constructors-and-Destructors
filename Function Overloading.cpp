@@ -1,6 +1,7 @@
-// Exo - 12
+// Exp - 12
 // Siddhesh
 // 25070123505 (A3)
+// Calculator
 
 #include <iostream>
 #include <string>
