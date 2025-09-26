@@ -3,7 +3,7 @@
 
 ---
 
-##📖 Theory:
+## 📖 Theory:
 
 In C++, constructors and destructors are special member functions:
 
